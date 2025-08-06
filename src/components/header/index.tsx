@@ -1,17 +1,17 @@
-import {
-  Download,
-  DownloadCloud,
-  MapIcon,
-  MapPin,
-  ShoppingBasket,
-} from "lucide-react";
-import React from "react";
+"use client";
+import { DownloadCloud, MapPin, ShoppingBasket } from "lucide-react";
+import Image from "next/image";
+import React, { useState } from "react";
+import { Logo } from "../../../public/images";
+import { NAV_LINK } from "@/constant/data";
 
 const Header = () => {
+  const [menu, SetMenu] = useState("Home");
+  console.log(menu);
   return (
-    <header>
-      <div className="flex items-center ">
-        <div className="flex justify-between items-center w-full bg-[#FAFAfafa] !p-4  rounded-bl-xl">
+    <header className="!px-16">
+      <div className="flex items-center  ">
+        <div className="flex justify-between items-center w-full bg-[#FAFAfA] !p-4  rounded-bl-xl">
           <div className="flex items-center text-sm">
             <span>⭐</span>
             <div className="flex !ml-2">
@@ -32,18 +32,38 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-2 bg-[#028643] text-white !p-4 rounded-bl-xl rounded-br-xl text-sm">
-          <span className=" ">
+        <div className="flex items-center gap-2 bg-[#028643] text-white  rounded-bl-xl rounded-br-xl text-sm">
+          <span className="border-r-2 border-white !p-4 ">
             <ShoppingBasket />
           </span>
-          <p>23Items</p>
-          <p> $100</p>
-          <span>
+          <p className="border-r-2 border-white !p-4 ">23Items</p>
+          <p className="border-r-2 border-white !p-4 "> $100</p>
+          <span className="border-r-2 border-white !p-4 ">
             <DownloadCloud />
           </span>
         </div>
       </div>
-      <div></div>
+      <div className="flex items-center justify-between !py-6">
+        <div className="relative h-[50px] w-[150px]">
+          <Image src={Logo} alt="logo" fill className="object-contain" />
+        </div>
+        <ul className="flex items-center gap-4 text-lg">
+          {NAV_LINK.map((link) => (
+            <li
+              key={link.name}
+              className={
+                menu === link.name
+                  ? "bg-[#FC8A06] text-white !p-2 rounded-full !px-4 outline-none border-none "
+                  : ""
+              }
+            >
+              <a href={link.link} onClick={() => SetMenu(link.name)}>
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </header>
   );
 };
