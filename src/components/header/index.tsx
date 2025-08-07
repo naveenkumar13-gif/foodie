@@ -7,7 +7,7 @@ import { NAV_LINK } from "@/constant/data";
 
 const Header = () => {
   const [menu, SetMenu] = useState("Home");
-  console.log(menu);
+
   return (
     <header className="!px-16">
       <div className="flex items-center  ">
