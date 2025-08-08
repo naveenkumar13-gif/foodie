@@ -1,4 +1,11 @@
-import { Fb, insta, snap, tiktok } from "../../../public/images";
+import {
+  Banner_1,
+  Banner_2,
+  Fb,
+  insta,
+  snap,
+  tiktok,
+} from "../../../public/images";
 
 export const NAV_LINK = [
   {
@@ -94,3 +101,37 @@ export const FOOTER_LINKS = [
     link: "/do-not-sell-or-share-my-personal-information",
   },
 ];
+
+export const BannerImage = [
+  {
+    src: Banner_1,
+    alt: "banner_1",
+  },
+  {
+    src: Banner_1,
+    alt: "banner_1",
+  },
+  {
+    src: Banner_2,
+    alt: "banner_2",
+  },
+];
+
+{
+  /* <div className="space-y-2 relative bottom-15 left-10 z-20">
+              <span className="text-xs text-[#fc8a06] tracking-wider">
+                Restaurant
+              </span>
+              <h2 className="text-2xl font-bold text-white">
+                {" "}
+                Chef Burgers London
+              </h2>
+            </div> */
+}
+{
+  /* <div className="flex flex-col gap-1 relative bottom-[37%] left-[25%] z-20 bg-black w-[50px] rounded-b-md !p-2">
+              <h2 className="text-[15px] font-bold text-white text-center">
+                40%{" "}
+              </h2>
+            </div> */
+}

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className=" w-full bg-red-50  rounded-lg h-[70vh] !my-6  flex items-center relative ">
+    <div className=" w-full bg-red-50  rounded-lg h-[70vh] !my-2  flex items-center relative ">
       <div className="flex flex-col  justify-center gap-3 !pl-10">
         <p className="text-sm">
           Order Restaurant food, takeaway and groceries.
@@ -15,7 +15,7 @@ const Hero = () => {
           <p>Enter a postcode to see what we deliver</p>
         </div>
       </div>
-      <div className="relative   top-6 right-50 w-[50%] h-[100%] z-20">
+      <div className="relative   top-[28.5px] right-50 w-[50%] h-[100%] z-20">
         <Image
           src={hero_1}
           alt="hero"
@@ -28,7 +28,7 @@ const Hero = () => {
             <div className="relative h-[20px] w-[50px]">
               <Image src={Logo} alt="logo" fill className="object-contain" />
             </div>
-            <span className="text-[8px] text-gray-700">now</span>
+            <span className="text-[10px] text-gray-700">now</span>
           </div>
           <div className="flex flex-col  text-[10px]">
             <p>We’ve Received your order!</p>
@@ -59,7 +59,7 @@ const Hero = () => {
             <p>Awaiting Restaurant acceptance </p>
           </div>
         </div>
-        <div className="relative   bottom-26.5 right-20 w-[80%] -z-0  ">
+        <div className="relative   bottom-[106px] right-20 w-[80%] -z-0  ">
           <Image src={hero_2} alt="hero" className="   h-[350px]   " />
         </div>
       </div>
