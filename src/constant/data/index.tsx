@@ -3,6 +3,12 @@ import {
   Banner_2,
   Fb,
   insta,
+  menu_1,
+  menu_2,
+  menu_3,
+  menu_4,
+  menu_5,
+  menu_6,
   snap,
   tiktok,
 } from "../../../public/images";
@@ -106,32 +112,58 @@ export const BannerImage = [
   {
     src: Banner_1,
     alt: "banner_1",
-  },
-  {
-    src: Banner_1,
-    alt: "banner_1",
+    title: "Restaurant",
+    location: "Chef Burgers London",
   },
   {
     src: Banner_2,
+    alt: "banner_1",
+    title: "Restaurant",
+    location: "Grand Ai Cafe London",
+  },
+  {
+    src: Banner_1,
     alt: "banner_2",
+    location: "Butterbrot Caf’e London",
+    title: "Restaurant",
   },
 ];
 
-{
-  /* <div className="space-y-2 relative bottom-15 left-10 z-20">
-              <span className="text-xs text-[#fc8a06] tracking-wider">
-                Restaurant
-              </span>
-              <h2 className="text-2xl font-bold text-white">
-                {" "}
-                Chef Burgers London
-              </h2>
-            </div> */
-}
-{
-  /* <div className="flex flex-col gap-1 relative bottom-[37%] left-[25%] z-20 bg-black w-[50px] rounded-b-md !p-2">
-              <h2 className="text-[15px] font-bold text-white text-center">
-                40%{" "}
-              </h2>
-            </div> */
-}
+export const menu_list = [
+  {
+    title: "Burgers & Fast food",
+    src: menu_1,
+    alt: "Burgers & Fast food image",
+    Restaurants: "21 Restaurants",
+  },
+  {
+    title: "Salads",
+    src: menu_2,
+    alt: "Salads image",
+    Restaurants: "32 Restaurants",
+  },
+  {
+    title: "Pasta & Casuals",
+    src: menu_3,
+    alt: "Pasta & Casuals image",
+    Restaurants: "12 Restaurants",
+  },
+  {
+    title: "Pizza",
+    src: menu_4,
+    alt: "Pizza image",
+    Restaurants: "17 Restaurants",
+  },
+  {
+    title: "Breakfast",
+    src: menu_5,
+    alt: "Breakfast image",
+    Restaurants: "10 Restaurants",
+  },
+  {
+    title: "Soups",
+    src: menu_6,
+    alt: "Soups image",
+    Restaurants: "15 Restaurants",
+  },
+];

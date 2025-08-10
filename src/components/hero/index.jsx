@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className=" w-full bg-red-50  rounded-lg h-[70vh] !my-2  flex items-center relative ">
+    <div className=" w-full bg-[#FBFBFB]  rounded-lg h-[70vh]   flex items-center relative ">
       <div className="flex flex-col  justify-center gap-3 !pl-10">
         <p className="text-sm">
           Order Restaurant food, takeaway and groceries.
@@ -13,6 +13,16 @@ const Hero = () => {
         <h2 className="text-5xl font-bold text-[#FC8A06]">Fast and Fresh</h2>
         <div className="flex flex-col gap-2 !mt-6">
           <p>Enter a postcode to see what we deliver</p>
+          <div className="flex relative ">
+            <input
+              type="text"
+              placeholder="e.g. EC4R 3TE"
+              className="!p-3 !px-4 h-12 rounded-full border-gray-400 border outline-none w-[65%]"
+            />
+            <button className="bg-[#FC8A06] text-white !p- rounded-full right-[35%] absolute !p-3 !px-6">
+              serach
+            </button>
+          </div>
         </div>
       </div>
       <div className="relative   top-[28.5px] right-50 w-[50%] h-[100%] z-20">

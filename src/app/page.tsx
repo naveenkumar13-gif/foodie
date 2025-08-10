@@ -1,12 +1,26 @@
+"use client";
 import Banner from "@/components/banner";
 import Hero from "@/components/hero";
+import PopularDish from "@/components/popularDish";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  return (
-   <div className="!px-16">
-    <Hero/>
-    <Banner/>
+  const [isVisible, setIsVisible] = useState(false);
 
-   </div>
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  return (
+    <div
+      className={`!px-16 transition-opacity duration-700  ${
+        isVisible ? "opacity-100" : "opacity-0"
+      }`}
+    >
+      <Hero />
+      {/* <Banner />
+      <PopularDish /> */}
+
+    </div>
   );
 }

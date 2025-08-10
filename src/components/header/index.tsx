@@ -1,5 +1,12 @@
 "use client";
-import { DownloadCloud, MapPin, ShoppingBasket } from "lucide-react";
+import {
+  DownloadCloud,
+  HamburgerIcon,
+  HamIcon,
+  MapPin,
+  Menu,
+  ShoppingBasket,
+} from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 import { Logo } from "../../../public/images";
@@ -9,9 +16,9 @@ const Header = () => {
   const [menu, SetMenu] = useState("Home");
 
   return (
-    <header className="!px-16">
-      <div className="flex items-center  ">
-        <div className="flex justify-between items-center w-full bg-[#FAFAfA] !p-4  rounded-bl-xl">
+    <header className="!px-16 ">
+      <div className="flex items-center  max-sm:hidden">
+        <div className="flex justify-between items-center w-full bg-[#FAFAfA] !p-4  rounded-bl-xl ">
           <div className="flex items-center text-sm">
             <span>⭐</span>
             <div className="flex !ml-2">
@@ -32,7 +39,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-2 bg-[#028643] text-white  rounded-bl-xl rounded-br-xl text-sm">
+        <div className="flex items-center  bg-[#028643] text-white  rounded-bl-xl rounded-br-xl text-sm">
           <span className="border-r-2 border-white !p-4 ">
             <ShoppingBasket />
           </span>
@@ -43,11 +50,11 @@ const Header = () => {
           </span>
         </div>
       </div>
-      <div className="flex items-center justify-between !py-6">
+      <div className="flex items-center justify-between !py-8">
         <div className="relative h-[50px] w-[150px]">
           <Image src={Logo} alt="logo" fill className="object-contain" />
         </div>
-        <ul className="flex items-center gap-4 text-lg">
+        <ul className="flex items-center gap-4 text-lg max-sm:hidden">
           {NAV_LINK.map((link) => (
             <li
               key={link.name}
@@ -63,6 +70,9 @@ const Header = () => {
             </li>
           ))}
         </ul>
+        <span className="max-sm:block hidden">
+          <Menu />
+        </span>
       </div>
     </header>
   );
