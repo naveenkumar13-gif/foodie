@@ -4,12 +4,12 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className=" w-full bg-[#FBFBFB]  rounded-lg h-[70vh] max-md:h-[60vh]   flex items-center relative  max-md:items-center max-md:bg-[#E2E2E2]">
-      <div className="flex flex-col  justify-center gap-3 !pl-10 max-md:!p-6 max-sm:text-center">
-        <p className="text-sm">
+    <div className=" w-full bg-[#FBFBFB]  rounded-lg h-[70vh] max-md:h-[42vh]   flex items-center relative  max-md:bg-[#E2E2E2]">
+      <div className="flex flex-col  justify-center gap-3  max-sm:gap-1 !pl-10 max-md:!p-6 max-sm:text-center">
+        <p className="text-sm max-sm:text-xs">
           Order Restaurant food, takeaway and groceries.
         </p>
-        <h1 className="text-6xl font-bold max-md:text-4xl">
+        <h1 className="text-6xl font-bold max-md:text-3xl">
           Feast Your Senses,
         </h1>
         <h2 className="text-5xl font-bold text-[#FC8A06] max-md:text-3xl">

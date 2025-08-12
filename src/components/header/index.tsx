@@ -48,7 +48,7 @@ const Header = () => {
           </span>
         </div>
       </div>
-      <div className="flex items-center justify-between !py-8">
+      <div className="flex items-center justify-between !py-8 max-sm:!py-4">
         <div className="relative h-[50px] w-[150px]">
           <Image src={Logo} alt="logo" fill className="object-contain" />
         </div>

@@ -30,7 +30,7 @@ function Banner() {
               </h2>
             </div>
 
-            <div className="absolute top-0 right-5 z-20 bg-black w-[50px] rounded-b-md !p-2 max-md:hidden">
+            <div className="absolute top-0 right-5 z-20 bg-black w-[50px] rounded-b-md !p-2 ">
               <h2 className="text-[14px] font-bold text-white text-center">
                 40%
               </h2>
