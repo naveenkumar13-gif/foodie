@@ -13,14 +13,13 @@ export default function Home() {
 
   return (
     <div
-      className={`!px-16 transition-opacity duration-700  ${
+      className={`!px-16 transition-opacity duration-700 max-sm:!px-4 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
       <Hero />
-      {/* <Banner />
-      <PopularDish /> */}
-
+       <Banner />
+      <PopularDish />
     </div>
   );
 }

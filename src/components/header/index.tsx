@@ -1,8 +1,6 @@
 "use client";
 import {
   DownloadCloud,
-  HamburgerIcon,
-  HamIcon,
   MapPin,
   Menu,
   ShoppingBasket,
@@ -16,7 +14,7 @@ const Header = () => {
   const [menu, SetMenu] = useState("Home");
 
   return (
-    <header className="!px-16 ">
+    <header className="!px-16 max-md:!px-8 max-sm:!px-4">
       <div className="flex items-center  max-sm:hidden">
         <div className="flex justify-between items-center w-full bg-[#FAFAfA] !p-4  rounded-bl-xl ">
           <div className="flex items-center text-sm">
