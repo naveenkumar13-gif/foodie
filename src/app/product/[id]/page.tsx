@@ -1,0 +1,44 @@
+"use client";
+import Title from "@/components/title";
+import { food_list } from "@/constant/data";
+import { PlusCircle } from "lucide-react";
+import Image from "next/image";
+import { useParams } from "next/navigation";
+import React from "react";
+
+function FoodDisplay() {
+  const { id } = useParams();
+  const category = food_list.filter((food) => food.category === id);
+  return (
+    <div className="!mb-10 ">
+      <Title>{id} </Title>
+      <div className="grid grid-cols-3  gap-6">
+        {category.map((food) => (
+          <div
+            key={food.id}
+            className=" rounded-lg overflow-hidden shadow-[rgba(0,0,0,0.2)] shadow-md bg-white !p-3 flex  justify-between"
+          >
+            <div className="!p-2 flex flex-col gap-2">
+              <h1 className="font-bold text-xl">{food.name}</h1>
+              <h3 className="text-sm ">{food.description}</h3>
+              <p className="text-gray-600 font-bold">${food.price}</p>
+            </div>
+            <div className="w-full h-full relative overflow-hidden">
+              <Image
+                src={food.image}
+                alt={food.name}
+                fill
+                className="w-full object-cover rounded-lg  hover:scale-105 transition-transform duration-300"
+              />
+              <span className="absolute bottom-0 right-0 bg-gray-200 rounded-tl-3xl !p-3">
+                <PlusCircle />
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default FoodDisplay;

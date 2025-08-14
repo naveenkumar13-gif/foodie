@@ -1,10 +1,5 @@
 "use client";
-import {
-  DownloadCloud,
-  MapPin,
-  Menu,
-  ShoppingBasket,
-} from "lucide-react";
+import { DownloadCloud, MapPin, Menu, ShoppingBasket } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 import { Logo } from "../../../public/images";
@@ -14,7 +9,7 @@ const Header = () => {
   const [menu, SetMenu] = useState("Home");
 
   return (
-    <header className="!px-16 max-md:!px-8 max-sm:!px-4">
+    <header className=" max-md:!px-8 max-sm:!px-4">
       <div className="flex items-center  max-sm:hidden">
         <div className="flex justify-between items-center w-full bg-[#FAFAfA] !p-4  rounded-bl-xl ">
           <div className="flex items-center text-sm">

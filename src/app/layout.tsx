@@ -27,7 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${poppins.variable}  !px-16  max-sm:!px-0 `}
+    >
       <body>
         <Header />
         {children}
