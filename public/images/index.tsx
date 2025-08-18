@@ -31,6 +31,7 @@ import food_12 from "./food_12.png";
 import heroNumber_2 from "./2.png";
 import heroNumber_3 from "./3.png";
 import heroNumber_1 from "./1.png";
+import discount from './discount.jpg'
 
 export {
   location,
@@ -66,4 +67,5 @@ export {
   heroNumber_2,
   heroNumber_3,
   heroNumber_1,
+  discount
 };

@@ -23,6 +23,7 @@ import {
   menu_6,
   snap,
   tiktok,
+  discount,
 } from "../../../public/images";
 
 export const NAV_LINK = [
@@ -187,7 +188,6 @@ export const menu_list = [
 ];
 
 export const food_list = [
-  // Burgers
   {
     id: 1,
     name: "Cheese Burger",
@@ -320,98 +320,13 @@ export const food_list = [
       "Pepperoni slices cover this cheesy pizza, with a crispy crust and a hint of oregano for added flavor.",
     category: "Pizza",
   },
-  {
-    id: 15,
-    name: "Veggie Pizza",
-    image: food_7,
-    price: 18,
-    description:
-      "A colorful array of fresh vegetables on a cheesy pizza crust, finished with a sprinkle of Italian herbs.",
-    category: "Pizza",
-  },
-  {
-    id: 16,
-    name: "BBQ Chicken Pizza",
-    image: food_8,
-    price: 24,
-    description:
-      "BBQ sauce and tender chicken pieces top this pizza, with red onions and cilantro for a punchy taste.",
-    category: "Pizza",
-  },
+];
 
-  // Breakfast
+export const DiscountImage = [
   {
-    id: 17,
-    name: "Pancakes",
-    image: food_9,
-    price: 10,
-    description:
-      "Fluffy pancakes stacked high, drizzled with maple syrup and butter, served with a side of fresh berries.",
-    category: "Breakfast",
-  },
-  {
-    id: 18,
-    name: "Omelette",
-    image: food_10,
-    price: 8,
-    description:
-      "A fluffy omelette filled with cheese and herbs, served with toast and a small side salad.",
-    category: "Breakfast",
-  },
-  {
-    id: 19,
-    name: "French Toast",
-    image: food_9,
-    price: 9,
-    description:
-      "Golden French toast, lightly dusted with powdered sugar, served with a side of maple syrup.",
-    category: "Breakfast",
-  },
-  {
-    id: 20,
-    name: "Waffles",
-    image: food_10,
-    price: 11,
-    description:
-      "Crispy waffles with a light, fluffy interior, served with whipped cream and fresh fruit on top.",
-    category: "Breakfast",
-  },
-
-  // Soups
-  {
-    id: 21,
-    name: "Tomato Soup",
-    image: food_11,
-    price: 7,
-    description:
-      "Warm tomato soup, seasoned with herbs and spices, served with a side of crusty bread for dipping.",
-    category: "Soups",
-  },
-  {
-    id: 22,
-    name: "Chicken Soup",
-    image: food_12,
-    price: 9,
-    description:
-      "Hearty chicken soup with tender pieces of chicken, carrots, and celery, simmered in a savory broth.",
-    category: "Soups",
-  },
-  {
-    id: 23,
-    name: "Mushroom Soup",
-    image: food_11,
-    price: 8,
-    description:
-      "Creamy mushroom soup with earthy flavors, topped with a sprinkle of fresh herbs for garnish.",
-    category: "Soups",
-  },
-  {
-    id: 24,
-    name: "Vegetable Soup",
-    image: food_12,
-    price: 8,
-    description:
-      "Fresh vegetable soup with a medley of seasonal vegetables, simmered in a light and savory broth.",
-    category: "Soups",
+    src: discount,
+    alt: "banner_1",
+    title: "Special Offer",
+    subtitle: "First Order Discount",
   },
 ];

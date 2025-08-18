@@ -4,7 +4,6 @@ import {
   MapPin,
   Menu,
   ShoppingBasket,
-  ShoppingBasketIcon,
   ShoppingCart,
   X,
 } from "lucide-react";

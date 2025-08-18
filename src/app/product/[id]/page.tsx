@@ -47,6 +47,7 @@ function FoodDisplay() {
                       image: food.image.src,
                       description: food.description,
                     });
+                    console.log(food);
                   }}
                 >
                   <PlusCircle />
