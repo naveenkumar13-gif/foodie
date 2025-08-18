@@ -1,10 +1,17 @@
 import React from "react";
-import { hero_1, hero_2, Logo } from "../../../public/images";
+import {
+  hero_1,
+  hero_2,
+  heroNumber_1,
+  heroNumber_2,
+  heroNumber_3,
+  Logo,
+} from "../../../public/images";
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className=" w-full bg-[#FBFBFB]  rounded-lg h-[70vh] max-md:h-[42vh]   flex items-center relative  max-md:bg-[#E2E2E2]">
+    <div className=" w-full bg-[#FBFBFB]  rounded-lg h-[70vh] max-md:h-[42vh]   flex items-center relative  border-2 border-gray-200/50 max-md:bg-[#E2E2E2]">
       <div className="flex flex-col  justify-center gap-3  max-sm:gap-1 !pl-10 max-md:!p-6 max-sm:text-center">
         <p className="text-sm max-sm:text-xs">
           Order Restaurant food, takeaway and groceries.
@@ -29,7 +36,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="relative   top-[28.5px] right-50 w-[50%] h-[100%] z-20  max-md:hidden max-md:right-0">
+      <div className="relative   top-[27px] right-50 w-[50%] h-[100%] z-20  max-md:hidden max-md:right-0">
         <Image
           src={hero_1}
           alt="hero"
@@ -37,7 +44,7 @@ const Hero = () => {
         />
       </div>
       <div className="bg-[#fc8a06] w-[500px] h-[90%]   rounded-l-full  absolute bottom-0  right-0 z-0 max-md:hidden">
-        <div className=" w-1/2 bg-[#F8F8F8]/80  rounded-lg  relative  top-23 left-32 z-20  !p-2 ">
+        <div className=" w-1/2 bg-[#Ffffff]  rounded-lg  relative  top-15 left-32 z-20  !p-2 ">
           <div className="flex justify-between items-center !mb-2">
             <div className="relative h-[20px] w-[50px]">
               <Image src={Logo} alt="logo" fill className="object-contain" />
@@ -48,8 +55,15 @@ const Hero = () => {
             <p>We’ve Received your order!</p>
             <p>Awaiting Restaurant acceptance </p>
           </div>
+          <div className=" absolute -top-15 right-5     h-full rounded-b-md !p-2 ">
+            <Image
+              src={heroNumber_1}
+              alt="logo"
+              className="!w-full h-full object-contain "
+            />
+          </div>
         </div>
-        <div className=" w-1/2 bg-[#F8F8F8]/80  rounded-lg  relative  top-38 left-52 z-20  !p-2 ">
+        <div className=" w-1/2 bg-[#Ffffff]  rounded-lg  relative  top-31 left-55 z-20  !p-2 ">
           <div className="flex justify-between items-center !mb-2">
             <div className="relative h-[20px] w-[50px]">
               <Image src={Logo} alt="logo" fill className="object-contain" />
@@ -60,8 +74,15 @@ const Hero = () => {
             <p>We’ve Received your order!</p>
             <p>Awaiting Restaurant acceptance </p>
           </div>
+          <div className=" absolute -top-15 right-3     h-full rounded-b-md !p-2 ">
+            <Image
+              src={heroNumber_2}
+              alt="logo"
+              className="!w-full h-full object-contain  "
+            />
+          </div>
         </div>
-        <div className=" w-1/2 bg-[#F8F8F8]/80  rounded-lg  relative  top-50 left-32 z-20  !p-2 ">
+        <div className=" w-1/2 bg-[#Ffffff]  rounded-lg  relative  top-50 left-32 z-20  !p-2 ">
           <div className="flex justify-between items-center !mb-2">
             <div className="relative h-[20px] w-[50px]">
               <Image src={Logo} alt="logo" fill className="object-contain" />
@@ -72,8 +93,15 @@ const Hero = () => {
             <p>We’ve Received your order!</p>
             <p>Awaiting Restaurant acceptance </p>
           </div>
+          <div className=" absolute -top-15 right-5     h-full rounded-b-md !p-2 ">
+            <Image
+              src={heroNumber_3}
+              alt="logo"
+              className="w-full h-full object-contain "
+            />
+          </div>
         </div>
-        <div className="relative   bottom-[106px] right-20 w-[80%] -z-0  ">
+        <div className="relative   bottom-[109px] right-20 w-[80%] -z-0  ">
           <Image src={hero_2} alt="hero" className="   h-[350px]   " />
         </div>
       </div>

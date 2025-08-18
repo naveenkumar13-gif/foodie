@@ -28,26 +28,9 @@ import food_9 from "./food_9.png";
 import food_10 from "./food_10.png";
 import food_11 from "./food_11.png";
 import food_12 from "./food_12.png";
-import food_13 from "./food_13.png";
-import food_14 from "./food_14.png";
-import food_15 from "./food_15.png";
-import food_16 from "./food_16.png";
-import food_17 from "./food_17.png";
-import food_18 from "./food_18.png";
-import food_19 from "./food_19.png";
-import food_20 from "./food_20.png";
-import food_21 from "./food_21.png";
-import food_22 from "./food_22.png";
-import food_23 from "./food_23.png";
-import food_24 from "./food_24.png";
-import food_25 from "./food_25.png";
-import food_26 from "./food_26.png";
-import food_27 from "./food_27.png";
-import food_28 from "./food_28.png";
-import food_29 from "./food_29.png";
-import food_30 from "./food_30.png";
-import food_31 from "./food_31.png";
-import food_32 from "./food_32.png";
+import heroNumber_2 from "./2.png";
+import heroNumber_3 from "./3.png";
+import heroNumber_1 from "./1.png";
 
 export {
   location,
@@ -80,24 +63,7 @@ export {
   food_10,
   food_11,
   food_12,
-  food_13,
-  food_14,
-  food_15,
-  food_16,
-  food_17,
-  food_18,
-  food_19,
-  food_20,
-  food_21,
-  food_22,
-  food_23,
-  food_24,
-  food_25,
-  food_26,
-  food_27,
-  food_28,
-  food_29,
-  food_30,
-  food_31,
-  food_32,
+  heroNumber_2,
+  heroNumber_3,
+  heroNumber_1,
 };

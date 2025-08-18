@@ -1,12 +1,26 @@
 "use client";
-import { DownloadCloud, MapPin, Menu, ShoppingBasket } from "lucide-react";
+import {
+  DownloadCloud,
+  MapPin,
+  Menu,
+  ShoppingBasket,
+  ShoppingBasketIcon,
+  ShoppingCart,
+  X,
+} from "lucide-react";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { Logo } from "../../../public/images";
 import { NAV_LINK } from "@/constant/data";
+import { usestore } from "@/store/useStore";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Header = () => {
   const [menu, SetMenu] = useState("Home");
+  const [open, setOpen] = useState(false);
+  const { cart } = usestore();
+  const route = useRouter();
 
   return (
     <header className=" max-md:!px-8 max-sm:!px-4">
@@ -57,15 +71,57 @@ const Header = () => {
                   : ""
               }
             >
-              <a href={link.link} onClick={() => SetMenu(link.name)}>
+              <Link href={link.link} onClick={() => SetMenu(link.name)}>
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
-        <span className="max-sm:block hidden">
-          <Menu />
-        </span>
+        <div className=" gap-3 relative bg-red-50 hidden max-sm:flex ">
+          <span className="cursor-pointer" onClick={() => setOpen(false)}>
+            <ShoppingCart />
+            {cart.length > 0 && (
+              <p className="w-2 h-2 rounded-full absolute top-0 bg-[#fc961f]  right-8"></p>
+            )}
+          </span>
+          <span className="max-sm:block hidden" onClick={() => setOpen(!open)}>
+            <Menu />
+          </span>
+        </div>
+        {/* mobile menu */}
+        <div
+          className={`absolute top-0 left-0 w-full h-screen bg-white !p-3 z-50 transition-transform duration-500 ease-in-out hidden max-sm:block ${
+            open ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <ul className="flex flex-col gap-8 !py-2 !p-3 ">
+            <div className="flex items-center justify-between">
+              <h1 className="text-2xl font-bold">Menu</h1>
+              <div className="flex items-center gap-4 relative">
+                <span className="cursor-pointer" onClick={() => setOpen(false)}>
+                  <ShoppingCart />
+                  {cart.length > 0 && (
+                    <p className="w-2 h-2 rounded-full absolute top-0 bg-[#fc961f]  right-10"></p>
+                  )}
+                </span>
+                <span className="cursor-pointer" onClick={() => setOpen(false)}>
+                  <X />
+                </span>
+              </div>
+            </div>
+
+            {NAV_LINK.map((link) => (
+              <li
+                key={link.name}
+                className={menu === link.name ? "font-bold text-red-500" : ""}
+              >
+                <a href={link.link} onClick={() => SetMenu(link.name)}>
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </header>
   );
