@@ -2,11 +2,12 @@ import { ShoppingBasket, Trash2 } from "lucide-react";
 import React from "react";
 import Title from "../title";
 import { usestore } from "@/store/useStore";
+import SubTotal from "@/components/subtotal/index";
 
 function Basket() {
   const { cart, removeFromCart } = usestore();
   return (
-    <div className="border border-gray-200  roundex-2xl bg-red-50  h-fit">
+    <div className="border border-gray-200  roundex-2xl h-fit">
       <div className="flex bg-[#028643] text-white items-center gap-5 justify-center">
         <span>
           <ShoppingBasket />
@@ -43,6 +44,7 @@ function Basket() {
             </div>
           ))}
         </div>
+        <SubTotal />
       </div>
     </div>
   );
