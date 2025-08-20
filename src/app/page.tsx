@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div
-      className={`ease-in transition-opacity duration-700 max-sm:!px-4 ${
+      className={`ease-in transition-opacity duration-700 max-sm:!px-4  ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >

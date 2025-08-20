@@ -2,6 +2,7 @@
 import Title from "@/components/title";
 import { food_list } from "@/constant/data";
 import { usestore } from "@/store/useStore";
+import { message } from "antd";
 import { PlusCircle } from "lucide-react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
@@ -11,9 +12,11 @@ function FoodDisplay() {
   const { id } = useParams();
   const category = food_list.filter((food) => food.category === id);
   const { addToCart } = usestore();
+  const [messageApi, contextHolder] = message.useMessage();
 
   return (
     <>
+      {contextHolder}
       <div className="!mb-10 max-sm:!px-4 ">
         <Title>{id} </Title>
         <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-6">
@@ -47,7 +50,13 @@ function FoodDisplay() {
                       image: food.image.src,
                       description: food.description,
                     });
-                    console.log(food);
+                    messageApi.success({
+                      content: (
+                        <>
+                          Add to Cart <b>{food.name}</b>
+                        </>
+                      ),
+                    });
                   }}
                 >
                   <PlusCircle />

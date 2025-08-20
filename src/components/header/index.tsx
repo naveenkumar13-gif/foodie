@@ -26,37 +26,37 @@ const Header = () => {
   };
 
   return (
-    <header className=" max-md:!px-8 max-sm:!px-4">
+    <header className=" max-md:!px-8 max-sm:!px-4 !px-16">
       <div className="flex items-center  max-sm:hidden">
-        <div className="flex justify-between items-center w-full bg-[#FAFAfA] !p-4 rounded-bl-xl">
-          <div className="flex items-center text-sm">
+        <div className="flex justify-between items-center w-full bg-[#FAFAfA]  rounded-bl-xl rounded-br-xl border-gray-200 border-b border-r border-l gap-6 ">
+          <div className="flex items-center text-sm !p-4">
             <span>⭐</span>
             <div className="flex !ml-2">
               <p> Get 5% Off your first order,</p>
               <span className="text-[#FC8A06] underline">Promo:Orders</span>
             </div>
           </div>
-          <div className="flex items-center text-sm">
+          <div className="flex items-center text-sm flex-1 justify-end">
             <span>
               <MapPin />
             </span>
-            <div className="flex !ml-2">
+            <div className="flex !ml-2 ">
               <p>Regent Street, A4, A4201, London</p>
               <span className="text-[#FC8A06] underline !mx-1">
                 Change Location
               </span>
             </div>
           </div>
-        </div>
-        <div className="flex items-center bg-[#028643] text-white rounded-bl-xl rounded-br-xl text-sm">
-          <span className="border-r-2 border-white !p-4 ">
-            <ShoppingBasket />
-          </span>
-          <p className="border-r-2 border-white !p-4 ">23 Items</p>
-          <p className="border-r-2 border-white !p-4 "> $100</p>
-          <span className="border-r-2 border-white !p-4 ">
-            <DownloadCloud />
-          </span>
+          <div className="flex items-center bg-[#028643] text-white rounded-bl-xl rounded-br-xl text-sm">
+            <span className="border-r-2 border-white !p-4 ">
+              <ShoppingBasket />
+            </span>
+            <p className="border-r-2 border-white !p-4 ">23 Items</p>
+            <p className="border-r-2 border-white !p-4 "> $100</p>
+            <span className=" !p-4 ">
+              <DownloadCloud />
+            </span>
+          </div>
         </div>
       </div>
       <div className="flex items-center justify-between !py-8 max-sm:!py-4">

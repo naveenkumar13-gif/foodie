@@ -7,7 +7,7 @@ import Link from "next/link";
 function PopularDish() {
   return (
     <div className="!py-8">
-      <Title title="Order.uk Popular Categories 🤩" />
+      <Title title=" Popular Categories 🤩" />
       <div className="grid grid-cols-6 max-sm:grid-cols-2 max-md:grid-cols-3 items-center gap-4  max-md:gap-2 ">
         {menu_list.map((item, index) => (
           <div key={index}>

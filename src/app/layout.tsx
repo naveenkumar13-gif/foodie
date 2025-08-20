@@ -29,11 +29,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${poppins.variable}  !px-16  max-sm:!px-0 `}
+      className={`${inter.variable} ${poppins.variable}   `}
     >
       <body>
         <Header />
+        <main className="!px-16  max-sm:!px-0">
+
         {children}
+        </main>
         <Footer />
       </body>
     </html>

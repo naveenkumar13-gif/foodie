@@ -32,13 +32,14 @@ export const NAV_LINK = [
     link: "/",
   },
   {
+    name: "Product",
+    link: "/product",
+  },
+  {
     name: "Order",
     link: "/order",
   },
-  // {
-  //   name: "About",
-  //   link: "/about",
-  // },
+
   // {
   //   name: "Contact",
   //   link: "/contact",
