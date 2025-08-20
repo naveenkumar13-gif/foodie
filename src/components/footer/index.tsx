@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <footer className="">
-      <div className="flex items-center justify-between max-md:gap-8 h-[400px] bg-[#D9D9D9]/60 !px-10 max-md:!p-8 max-md:flex-wrap max-md:h-auto max-sm:flex-col  ">
+      <div className="flex items-center justify-between max-md:gap-8 h-[400px] bg-[#D9D9D9]/60 !px-16 max-md:!p-8 max-md:flex-wrap max-md:h-auto max-sm:flex-col  ">
         <div className="flex flex-col gap-4 max-md:!mb-5 max-md:items-center max-md:text-center">
           <div className="relative h-[50px] w-[150px]">
             <Image src={Logo} alt="logo" fill className="object-contain" />
@@ -19,10 +19,10 @@ const Footer = () => {
 
           <div className="flex">
             <span>
-              <Image src={AppStore} alt="logo" width={100} />
+              <Image src={AppStore} alt="logo" width={150} />
             </span>
             <span>
-              <Image src={PlayStore} alt="logo" width={100} />
+              <Image src={PlayStore} alt="logo" width={150} />
             </span>
           </div>
 
