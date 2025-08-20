@@ -1,5 +1,4 @@
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
 
 export interface CartItem {
   id: number;
@@ -12,8 +11,8 @@ export interface CartItem {
 interface Store {
   cart: CartItem[];
   discount: number;
-  applyDiscount: (percent: number) => void;
-  isDiscountApplied: boolean;
+  isDiscount: boolean;
+  precentage: (num: number) => void;
   addToCart: (item: CartItem) => void;
   removeFromCart: (id: number) => void;
   updateCart: (id: number, quantity: number) => void;
@@ -24,7 +23,7 @@ interface Store {
 export const usestore = create<Store>()((set, get) => ({
   cart: [],
   discount: 0,
-  isDiscountApplied: false,
+  isDiscount: false,
   addToCart: (item) => {
     const { cart } = get();
     const existingItem = cart.find((i) => i.id === item.id);
@@ -42,17 +41,16 @@ export const usestore = create<Store>()((set, get) => ({
     }
   },
 
-  applyDiscount(percent) {
-    const { discount, isDiscountApplied } = get();
-    set({
-      discount: discount + percent,
-      isDiscountApplied: !isDiscountApplied,
-    });
-  },
   removeFromCart: (id) => {
     const { cart } = get();
     set({
       cart: cart.filter((i) => i.id !== id),
+    });
+  },
+  precentage(num) {
+    set({
+      discount: num,
+      isDiscount: true,
     });
   },
 
@@ -67,11 +65,11 @@ export const usestore = create<Store>()((set, get) => ({
     set({ cart: [] });
   },
   getTotalPrice: () => {
-    const { cart,  isDiscountApplied } = get();
+    const { cart, isDiscount } = get();
     const total = cart.reduce(
       (sum, item) => sum + item.price * item.quantity,
       0
     );
-    return isDiscountApplied ? total - 20 : total;
+    return isDiscount ? total - 10 : total;
   },
 }));

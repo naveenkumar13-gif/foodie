@@ -5,8 +5,7 @@ import Image from "next/image";
 import React from "react";
 
 function Discount() {
-  const { applyDiscount, isDiscountApplied } = usestore();
-
+  const { isDiscount, precentage } = usestore();
   return (
     <div className="flex gap-6 items-center max-md:gap-3  ">
       {DiscountImage.map((item, index) => (
@@ -33,11 +32,11 @@ function Discount() {
             </h2>
           </div>
           <button
-            className={`absolute bottom-0 right-0 bg-gray-200 rounded-tl-3xl !p-3 ${
-              isDiscountApplied ? "bg-red-200" : ""
-            }`}
-            onClick={() => applyDiscount(20)}
-            disabled={isDiscountApplied}
+            className={`absolute bottom-0 right-0 bg-gray-200 rounded-tl-3xl !p-3 
+               ${isDiscount ? "hidden" : ""}
+
+            `}
+            onClick={() => precentage(20)}
           >
             <PlusCircle />
           </button>

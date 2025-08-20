@@ -35,14 +35,14 @@ export const NAV_LINK = [
     name: "Order",
     link: "/order",
   },
-  {
-    name: "About",
-    link: "/about",
-  },
-  {
-    name: "Contact",
-    link: "/contact",
-  },
+  // {
+  //   name: "About",
+  //   link: "/about",
+  // },
+  // {
+  //   name: "Contact",
+  //   link: "/contact",
+  // },
 ];
 
 export const socialMediaLinks = [
@@ -192,7 +192,7 @@ export const food_list = [
     id: 1,
     name: "Cheese Burger",
     image: food_1,
-    price: 15,
+    price: 25,
     description:
       "A juicy burger topped with a generous layer of melted cheese, served with fresh lettuce, tomato, and a side of fries.",
     category: "Burgers",
@@ -201,7 +201,7 @@ export const food_list = [
     id: 2,
     name: "Veggie Burger",
     image: food_2,
-    price: 12,
+    price: 30,
     description:
       "A healthy vegetarian option featuring a flavorful vegetable patty, accompanied by fresh salad and a hint of spicy sauce.",
     category: "Burgers",
@@ -210,7 +210,7 @@ export const food_list = [
     id: 3,
     name: "Double Burger",
     image: food_1,
-    price: 17,
+    price: 27,
     description:
       "Double the delight with two juicy beef patties, layered with cheese, fresh veggies, and a special house sauce.",
     category: "Burgers",
@@ -219,7 +219,7 @@ export const food_list = [
     id: 4,
     name: "BBQ Burger",
     image: food_2,
-    price: 16,
+    price: 26,
     description:
       "A smoky BBQ sauce enhances this delicious burger, topped with crispy onion rings and served with a side of slaw.",
     category: "Burgers",
@@ -230,7 +230,7 @@ export const food_list = [
     id: 5,
     name: "Greek Salad",
     image: food_3,
-    price: 12,
+    price: 35,
     description:
       "A refreshing mix of cucumbers, tomatoes, olives, and feta cheese, drizzled with olive oil and vinegar dressing.",
     category: "Salad",
@@ -239,7 +239,7 @@ export const food_list = [
     id: 6,
     name: "Veg Salad",
     image: food_4,
-    price: 18,
+    price: 28,
     description:
       "A vibrant salad featuring seasonal vegetables, sprinkled with nuts and seeds, served with a tangy vinaigrette.",
     category: "Salad",
@@ -248,7 +248,7 @@ export const food_list = [
     id: 7,
     name: "Caesar Salad",
     image: food_3,
-    price: 14,
+    price: 30,
     description:
       "Crisp romaine lettuce, crunchy croutons, and grated Parmesan cheese, tossed in a classic Caesar dressing.",
     category: "Salad",
@@ -257,7 +257,7 @@ export const food_list = [
     id: 8,
     name: "Fruit Salad",
     image: food_4,
-    price: 15,
+    price: 20,
     description:
       "A medley of fresh seasonal fruits, served with a light yogurt dressing and a sprinkle of mint leaves.",
     category: "Salad",
@@ -268,7 +268,7 @@ export const food_list = [
     id: 9,
     name: "Cheese Pasta",
     image: food_5,
-    price: 12,
+    price: 25,
     description:
       "Creamy cheese pasta with a rich, velvety sauce and a hint of garlic, garnished with freshly grated Parmesan.",
     category: "Pasta",
@@ -277,7 +277,7 @@ export const food_list = [
     id: 10,
     name: "Tomato Pasta",
     image: food_6,
-    price: 18,
+    price: 28,
     description:
       "A tangy tomato sauce envelopes this pasta, with basil and oregano adding a delightful Italian flavor.",
     category: "Pasta",
@@ -286,7 +286,7 @@ export const food_list = [
     id: 11,
     name: "White Sauce Pasta",
     image: food_5,
-    price: 14,
+    price: 24,
     description:
       "Smooth and creamy white sauce coats this pasta, with a touch of nutmeg and a sprinkle of parsley.",
     category: "Pasta",
@@ -295,7 +295,7 @@ export const food_list = [
     id: 12,
     name: "Pesto Pasta",
     image: food_6,
-    price: 16,
+    price: 26,
     description:
       "Pasta tossed with vibrant pesto sauce, made from fresh basil, pine nuts, and Parmesan cheese.",
     category: "Pasta",

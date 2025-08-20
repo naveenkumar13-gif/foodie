@@ -81,7 +81,7 @@ const Header = () => {
           ))}
         </ul>
 
-        <div className="gap-3 relative bg-red-50 hidden max-sm:flex ">
+        <div className="gap-3 relative  hidden max-sm:flex ">
           <span className="cursor-pointer" onClick={() => setOpen(false)}>
             <ShoppingCart />
             {cart.length > 0 && (
@@ -93,7 +93,7 @@ const Header = () => {
           </span>
         </div>
         <div
-          className={`absolute top-0 left-0 w-full h-screen bg-white !p-3 z-50 transition-transform duration-500 ease-in-out hidden max-sm:block ${
+          className={`fixed top-0 left-0 w-full h-screen bg-white !p-3 z-50 transition-transform duration-500 ease-in-out hidden max-sm:block ${
             open ? "translate-x-0" : "translate-x-full"
           }`}
         >
