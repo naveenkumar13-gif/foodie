@@ -28,6 +28,10 @@ import food_9 from "./food_9.png";
 import food_10 from "./food_10.png";
 import food_11 from "./food_11.png";
 import food_12 from "./food_12.png";
+import food_13 from "./food_13.png";
+import food_14 from "./food_14.png";
+import food_15 from "./food_15.png";
+import food_16 from "./food_16.png";
 import heroNumber_2 from "./2.png";
 import heroNumber_3 from "./3.png";
 import heroNumber_1 from "./1.png";
@@ -64,6 +68,10 @@ export {
   food_10,
   food_11,
   food_12,
+  food_13,
+  food_14,
+  food_15,
+  food_16,
   heroNumber_2,
   heroNumber_3,
   heroNumber_1,

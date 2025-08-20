@@ -24,6 +24,10 @@ import {
   snap,
   tiktok,
   discount,
+  food_13,
+  food_14,
+  food_15,
+  food_16,
 } from "../../../public/images";
 
 export const NAV_LINK = [
@@ -181,7 +185,7 @@ export const menu_list = [
   },
   {
     id: 6,
-    menu_name: "Soups",
+    menu_name: "Soup",
     src: menu_6,
     alt: "Soups image",
     Restaurants: "15 Restaurants",
@@ -189,6 +193,7 @@ export const menu_list = [
 ];
 
 export const food_list = [
+  // Burgers
   {
     id: 1,
     name: "Cheese Burger",
@@ -321,7 +326,84 @@ export const food_list = [
       "Pepperoni slices cover this cheesy pizza, with a crispy crust and a hint of oregano for added flavor.",
     category: "Pizza",
   },
+
+  // Breakfast
+  {
+    id: 15,
+    name: "Pancakes",
+    image: food_9,
+    price: 18,
+    description:
+      "Fluffy golden pancakes served with maple syrup, butter, and a sprinkle of powdered sugar.",
+    category: "Breakfast",
+  },
+  {
+    id: 16,
+    name: "Omelette",
+    image: food_10,
+    price: 15,
+    description:
+      "A fluffy omelette filled with cheese, onions, and herbs, served with toast and butter.",
+    category: "Breakfast",
+  },
+  {
+    id: 17,
+    name: "French Toast",
+    image: food_11,
+    price: 20,
+    description:
+      "Golden-brown French toast sprinkled with cinnamon and served with honey and fresh fruits.",
+    category: "Breakfast",
+  },
+  {
+    id: 18,
+    name: "Avocado Toast",
+    image: food_12,
+    price: 22,
+    description:
+      "Crispy toast topped with smashed avocado, cherry tomatoes, and a drizzle of olive oil.",
+    category: "Breakfast",
+  },
+
+  // Soups
+  {
+    id: 19,
+    name: "Tomato Soup",
+    image: food_13,
+    price: 12,
+    description:
+      "A warm and tangy tomato soup garnished with fresh basil, served with crunchy croutons.",
+    category: "Soup",
+  },
+  {
+    id: 20,
+    name: "Chicken Soup",
+    image: food_14,
+    price: 16,
+    description:
+      "Comforting chicken soup with tender chicken pieces, vegetables, and a flavorful broth.",
+    category: "Soup",
+  },
+  {
+    id: 21,
+    name: "Mushroom Soup",
+    image: food_15,
+    price: 14,
+    description:
+      "A creamy mushroom soup with earthy flavors, finished with a drizzle of cream and herbs.",
+    category: "Soup",
+  },
+  {
+    id: 22,
+    name: "Sweet Corn Soup",
+    image: food_16,
+    price: 13,
+    description:
+      "A light and flavorful soup made with sweet corn, carrots, and spring onions.",
+    category: "Soup",
+  },
 ];
+
 
 export const DiscountImage = [
   {

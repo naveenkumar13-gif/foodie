@@ -12,7 +12,7 @@ function Product() {
   return (
     <>
       {contextHolder}
-      <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-6">
+      <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-6  !pb-12">
         {food_list.map((food) => (
           <div
             key={food.id}
