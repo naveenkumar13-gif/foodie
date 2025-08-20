@@ -27,16 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${poppins.variable}   `}
-    >
+    <html lang="en" className={`${inter.variable} ${poppins.variable}   `}>
       <body>
         <Header />
-        <main className="!px-16  max-sm:!px-0">
-
-        {children}
-        </main>
+        <main className="!px-16  max-sm:!px-4">{children}</main>
         <Footer />
       </body>
     </html>

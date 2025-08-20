@@ -341,7 +341,7 @@ export const food_list = [
     id: 16,
     name: "Omelette",
     image: food_10,
-    price: 15,
+    price: 25,
     description:
       "A fluffy omelette filled with cheese, onions, and herbs, served with toast and butter.",
     category: "Breakfast",
@@ -359,7 +359,7 @@ export const food_list = [
     id: 18,
     name: "Avocado Toast",
     image: food_12,
-    price: 22,
+    price: 28,
     description:
       "Crispy toast topped with smashed avocado, cherry tomatoes, and a drizzle of olive oil.",
     category: "Breakfast",
@@ -370,7 +370,7 @@ export const food_list = [
     id: 19,
     name: "Tomato Soup",
     image: food_13,
-    price: 12,
+    price: 22,
     description:
       "A warm and tangy tomato soup garnished with fresh basil, served with crunchy croutons.",
     category: "Soup",
@@ -379,7 +379,7 @@ export const food_list = [
     id: 20,
     name: "Chicken Soup",
     image: food_14,
-    price: 16,
+    price: 36,
     description:
       "Comforting chicken soup with tender chicken pieces, vegetables, and a flavorful broth.",
     category: "Soup",
@@ -388,7 +388,7 @@ export const food_list = [
     id: 21,
     name: "Mushroom Soup",
     image: food_15,
-    price: 14,
+    price: 24,
     description:
       "A creamy mushroom soup with earthy flavors, finished with a drizzle of cream and herbs.",
     category: "Soup",
@@ -397,7 +397,7 @@ export const food_list = [
     id: 22,
     name: "Sweet Corn Soup",
     image: food_16,
-    price: 13,
+    price: 23,
     description:
       "A light and flavorful soup made with sweet corn, carrots, and spring onions.",
     category: "Soup",

@@ -82,7 +82,7 @@ const Header = () => {
         </ul>
 
         <div className="gap-3 relative  hidden max-sm:flex ">
-          <span className="cursor-pointer" onClick={() => setOpen(false)}>
+          <span className="cursor-pointer" onClick={() => route.push("/order")}>
             <ShoppingCart />
             {cart.length > 0 && (
               <p className="w-2 h-2 rounded-full absolute top-0 bg-[#fc961f] right-8"></p>

@@ -23,7 +23,7 @@ function FoodDisplay() {
           {category.map((food) => (
             <div
               key={food.id}
-              className=" rounded-lg overflow-hidden shadow-[rgba(0,0,0,0.2)] shadow-md bg-white  !p-3 flex  justify-between w-full "
+              className=" rounded-lg overflow-hidden shadow-[8px_8px_16px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-transform duration-300  bg-white  !p-3 flex  justify-between w-full "
             >
               <div className="!p-2 flex flex-col gap-2  ">
                 <h1 className="font-bold text-xl max-sm:text-sm">

@@ -70,6 +70,6 @@ export const usestore = create<Store>()((set, get) => ({
       (sum, item) => sum + item.price * item.quantity,
       0
     );
-    return isDiscount ? total - 10 : total;
+    return isDiscount ? total - 20 : total;
   },
 }));

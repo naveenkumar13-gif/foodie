@@ -1,12 +1,16 @@
 import { DiscountImage } from "@/constant/data";
 import { usestore } from "@/store/useStore";
-import { PlusCircle, ScanLine } from "lucide-react";
+import { message } from "antd";
+import {  ScanLine } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
 function Discount() {
   const { isDiscount, precentage } = usestore();
+  const [messageApi, contextHolder] = message.useMessage();
   return (
+   <>
+    {contextHolder}
     <div className="flex gap-6 items-center max-md:gap-3  ">
       {DiscountImage.map((item, index) => (
         <div key={index} className="relative rounded-xl">
@@ -36,13 +40,20 @@ function Discount() {
                ${isDiscount ? "hidden" : ""}
 
             `}
-            onClick={() => precentage(20)}
+            onClick={() => {
+            precentage(20 );
+              messageApi.success("20% discount applied");
+              
+                
+            
+            }}
           >
             <ScanLine />
           </button>
         </div>
       ))}
     </div>
+   </>
   );
 }
 
