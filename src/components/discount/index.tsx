@@ -1,6 +1,6 @@
 import { DiscountImage } from "@/constant/data";
 import { usestore } from "@/store/useStore";
-import { PlusCircle } from "lucide-react";
+import { PlusCircle, ScanLine } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -38,7 +38,7 @@ function Discount() {
             `}
             onClick={() => precentage(20)}
           >
-            <PlusCircle />
+            <ScanLine />
           </button>
         </div>
       ))}

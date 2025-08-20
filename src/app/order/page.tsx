@@ -23,7 +23,7 @@ function Order() {
       ) : (
         <div className="col-span-3">
           {cart?.length === 0 && (
-            <div className="flex flex-col items-center justify-center !py-16 text-gray-500 ">
+            <div className="flex flex-col items-center justify-center !py-16 text-gray-500 shadow-2xs">
               <div className="!p-4   bg-gray-100 rounded-full shadow-sm">
                 <ShoppingCart size={40} className="text-gray-400" />
               </div>
