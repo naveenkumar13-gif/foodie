@@ -43,7 +43,10 @@ export const NAV_LINK = [
     name: "Order",
     link: "/order",
   },
-
+  {
+    name: "Offers",
+    link: "/offers",
+  },
   // {
   //   name: "Contact",
   //   link: "/contact",

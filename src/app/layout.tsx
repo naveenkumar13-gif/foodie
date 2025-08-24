@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${poppins.variable}   `}>
       <body>
         <Header />
-        <main className="!px-16  max-sm:!px-4">{children}</main>
+        <main className="!px-16  max-sm:!px-4 min-h-[calc(100vh-639px)]">{children}</main>
         <Footer />
       </body>
     </html>

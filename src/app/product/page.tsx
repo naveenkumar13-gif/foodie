@@ -19,6 +19,7 @@ function Product() {
   const [error, setError] = useState<string>("");
   const { addToCart } = usestore();
   const [messageApi, contextHolder] = message.useMessage();
+  
   useEffect(() => {
     try {
       const fetchData = async () => {
@@ -33,6 +34,23 @@ function Product() {
       }
     }
   }, []);
+
+  const handleAddToCart = (food: Food) => {
+    addToCart({
+      id: food.id,
+      name: food.name,
+      description: food.description,
+      price: food.price,
+      quantity: 1,
+    });
+    messageApi.success({
+      content: (
+        <>
+          Add to Cart <b>{food.name}</b>
+        </>
+      ),
+    });
+  };
 
   if (error) {
     return <div>{error}</div>;
@@ -61,21 +79,7 @@ function Product() {
               <span
                 className="absolute bottom-0 right-0 bg-gray-200 rounded-tl-3xl !p-3"
                 onClick={() => {
-                  addToCart({
-                    id: food.id,
-                    name: food.name,
-                    price: food.price,
-                    quantity: 1,
-                    // image: food.image,
-                    description: food.description,
-                  });
-                  messageApi.success({
-                    content: (
-                      <>
-                        Add to Cart <b>{food.name}</b>
-                      </>
-                    ),
-                  });
+                  handleAddToCart(food);
                 }}
               >
                 <PlusCircle />
