@@ -1,15 +1,32 @@
-import React from "react";
+import React, { use, useEffect, useState } from "react";
 import Title from "../title";
 import { menu_list } from "@/constant/data";
 import Image from "next/image";
 import Link from "next/link";
+interface Props {
+  id: number;
+  menu_name: string;
+  src: string;
+  alt: string;
+  Restaurants: string;
+}
 
 function PopularDish() {
+  const [menu, setMenu] = useState<Props[]>([]);
+
+  useEffect(() => {
+    const fetchMenu = async () => {
+      const res = await fetch("http://localhost:5000/categories");
+      const data = await res.json();
+      setMenu(data);
+    };
+    fetchMenu();
+  }, []);
   return (
     <div className="!py-8">
       <Title title=" Popular Categories 🤩" />
       <div className="grid grid-cols-6 max-sm:grid-cols-2 max-md:grid-cols-3 items-center gap-4  max-md:gap-2 ">
-        {menu_list.map((item, index) => (
+        {menu.map((item, index) => (
           <div key={index}>
             <Link href={`/product/${item.menu_name}`}>
               <div className="overflow-hidden max-md:max-w-[200px]  ">
